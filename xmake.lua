@@ -29,6 +29,7 @@ add_headerfiles("include/(rtsyn/**.h)")
 
 local rtsyn_modules = {
 	{ path = "node", name = "node" },
+	{ path = "node/aggregation", name = "aggregation" },
 }
 
 for _, rtsyn_module in ipairs(rtsyn_modules) do
