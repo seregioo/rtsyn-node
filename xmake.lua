@@ -27,7 +27,9 @@ add_includedirs("include", { public = true })
 add_includedirs("src")
 add_headerfiles("include/(rtsyn/**.h)")
 
-local rtsyn_modules = {}
+local rtsyn_modules = {
+	{ path = "node", name = "node" },
+}
 
 for _, rtsyn_module in ipairs(rtsyn_modules) do
 	local tests_name = "tests/" .. rtsyn_module.path .. "-tests"
